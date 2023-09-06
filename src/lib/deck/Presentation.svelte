@@ -2,6 +2,7 @@
 	import Slide from './Slide.svelte';
 	import Markdown from './Markdown.svelte';
 	import Code from './Code.svelte';
+	import Notes from './Notes.svelte';
 </script>
 
 <Slide>Horizantal Slide</Slide>
@@ -45,4 +46,19 @@
 			}
 	 `}
 	</Code>
+</Slide>
+<Slide>
+	<Markdown>
+		{`
+            ## Markdown ❤️
+            You can use **HTML** or **Markdown** for slides.
+        `}
+	</Markdown>
+
+	<Notes>
+		<b>Avoid eye contact.</b>
+	</Notes>
+</Slide>
+<Slide>
+	<Markdown name="example.md" external />
 </Slide>
